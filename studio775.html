@@ -25,10 +25,22 @@ h1 {
   text-align: center;
 }
 
+.content {
+  /* height: 100px; */
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
 .resource-box {
   border-right: 2px solid #AFFFF8;
   text-align: center;
   font-size: 1.1em;
+  background:green;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
   /* text-color: */
 }
 
@@ -50,30 +62,43 @@ h3 {
 <body>
   <br/>
   <br/>
-  <div class="container body">
+  <div class="container">
     <h1><b>Welcome To Studio 775</b></h1>
     <br/>
     <p class="center-text">Welcome to Studio 775, an new mini makerspace and a collaborative, community-driven space where users of all ages can learn to use new tech tools in creative ways.
     Below are some links to popular and common websites and resources to use in here :)</p>
     <br/>
     <!-- <p class="center-text">If you have any questions, please ask one of our volunteers!</p> -->
-    <div class="resource-box rb-left col-md-4 col-md">
+    <div class="content">
+    <div class="resource-box rb-left col-md-3 col-md">
       <h3>Tinkercad</h3>
       <p>
         A cloud based, easy drag and drop website for designing 3d models. If you have never used CAD software before, this might be a good place to start - after creating an account, you will be redirect to a short tutorial that will teach you the bascis.</p>
       </p>
       <a href="https://tinkercad.com/">Tinkercad.com</a>
     </div>
-    <div class="resource-box col-md-4 col-md">
+    <div class="resource-box col-md-3 col-md">
       <h3>Thingiverse</h3>
       <p>
-        Thousands of free 3d models (and inspiration) to download and print. Go here if you want to print something but you don't want to design it on your own. There are also many
+        Thousands of free 3d models (and inspiration) to download and print. Go here if you want to print something but you don't want to design it on your own.
       </p>
-      <a href="https://tinkercad.com/">Tinkercad.com</a>
+      <a href="https://thingiverse.com/">Thingiverse.com</a>
     </div>
-    <div class="resource-box col-md-4 col-md">
+    <div class="resource-box col-md-3 col-md">
       <h3>Cricut Design Space</h3>
+      <p>
+        Thousands of free 3d models (and inspiration) to download and print. Go here if you want to print something but you don't want to design it on your own.
+      </p>
+      <a href="https://thingiverse.com/">Thingiverse.com</a>
     </div>
+    <div class="resource-box col-md-3 col-md">
+      <h3>Easel</h3>
+      <p>
+        Thousands of free 3d models (and inspiration) to download and print. Go here if you want to print something but you don't want to design it on your own.
+      </p>
+      <a href="https://thingiverse.com/">Thingiverse.com</a>
+    </div>
+  </div>
   </div>
 </body>
 </html>
