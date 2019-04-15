@@ -28,7 +28,7 @@
 
   //Web workers are used for code hinting in PHP, JavaScript, and JSON.
   //We don't yet have a way to set the worker options, but you can disable it.
-  "useWorker": true,
+  "useWorker": false,
   //autocomplete triggers on Ctrl-Space
   "autocomplete": true,
   //autocomplete triggers automatically
@@ -67,7 +67,7 @@
   "jsHint": {
     "eqeqeq": true,
     "bitwise": true,
-    "esversion": 6,
+    "esversion": 9,
     "freeze": true,
     "indent": 2,
     "leanswitch": true,
