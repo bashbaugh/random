@@ -16,7 +16,7 @@
   "trimEmptyLines": false, //should the trim whitespace command also truncate empty lines?
 
   // syntax options
-  "indentation": 2, //indentation size
+  "indentation": 4, //indentation size
   "useTabs": false, //will turn off Ace's setUseSoftTabs() option and use tab characters instead
   "wordWrap": true,
   "wrapLimit": false, //Set to the number of characters you want or false for full window
@@ -28,7 +28,7 @@
 
   //Web workers are used for code hinting in PHP, JavaScript, and JSON.
   //We don't yet have a way to set the worker options, but you can disable it.
-  "useWorker": false,
+  "useWorker": true,
   //autocomplete triggers on Ctrl-Space
   "autocomplete": true,
   //autocomplete triggers automatically
@@ -72,16 +72,22 @@
     "indent": 2,
     "leanswitch": true,
     "maxdepth": 4,
-    "maxlen": 100,
+    "maxlen": 200,
     "newcap": true,
     "undef": true,
-    "unused": true
+    "unused": true,
+    "globals": {
+        "Phaser": true
+    }
   },
 
   // You can set syntax options here. Not all options supported yet.
   "syntaxSpecific": {
     "python": {
       "indentation": 4
+    },
+    "javascript": {
+        "indentation": 2
     }
   }
 }
